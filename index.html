@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToDoリスト</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- 以下、アウトプット-->
+
+  <!-- <header id="header" class="header">
+    <div class="wrapper header-wrapper">
+      <img src="img/1.png" alt="ロゴ" class="header__logo">
+      <h1 class="header_name">Janken Game</h1>
+      <nav>
+        <ul class="header__list">
+          <li class="header__item"><a href="#about">About</a></li>
+          <li class="header__item"><a href="#access">Game</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header> -->
+
+  <main id="main" class="main">
+    <h1>ToDoリスト</h1>
+
+    <h2>入力欄</h2>
+
+    <div id="input">
+      <dl class="input__row">
+        <dt class="input__q">タイトル</dt>
+        <dd class="input__a"><input type="text" name="title" id="title" class="input__formparts1"></dd>
+      </dl>
+      <dl class="input__row">
+        <dt class="input__q">優先度</dt>
+        <dd class="input__a">
+          <select name="priority" id="priority" class="contact__formparts1">
+            <option value="high">高</option>
+            <option value="middle">中</option>
+            <option value="low">低</option>
+          </select>
+        </dd>
+      </dl>
+      <dl class="input__row">
+        <dt class="input__q">タイプ</dt>
+        <dd class="input__a">
+          <select name="type" id="type" class="contact__formparts1">
+            <option value="work">Work</option>
+            <option value="private">Private</option>
+          </select>
+        </dd>
+      </dl>
+      <dl class="input__row">
+        <dt class="input__q">期日</dt>
+        <dd class="input__a"><input type="date" name="duedate" id="duedate" class="input__formparts1"></dd>
+      </dl>
+      <input type="submit" value="登録" name="register" id="register" class="btn">
+    </div>
+
+    <section class="output">
+    <h2>アウトプット</h2>
+
+    <p id="text_area"></p>
+    
+    <button id="delete">削除</button>
+  </section>
+
+  <!-- 以下、Javascriptの設定 -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
